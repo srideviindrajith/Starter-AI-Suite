@@ -5,9 +5,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#D4AF37', // Royal Gold
+        primary: {
+          DEFAULT: '#D4AF37', // Royal Gold
+          400: '#D4AF37', // Use same color for 400 shade
+          500: '#D4AF37', // Use same color for 500 shade
+          600: '#D4AF37', // Use same color for 600 shade
+        },
         secondary: '#0F172A', // Deep Navy
         accent: '#2563EB', // Royal Blue
+        "accent-glow": "#00d4ff", // Custom glow accent
+        "accent-cyan": "#00d4ff", // Custom cyan accent
+        "accent-blue": "#2563EB", // Alias for accent blue
         background: '#000000', // Luxury Black
         dark: colors.gray,
       },
