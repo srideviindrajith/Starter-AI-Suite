@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors');
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -8,6 +9,7 @@ export default {
         secondary: '#0F172A', // Deep Navy
         accent: '#2563EB', // Royal Blue
         background: '#000000', // Luxury Black
+        dark: colors.gray,
       },
       fontFamily: {
         sans: [
